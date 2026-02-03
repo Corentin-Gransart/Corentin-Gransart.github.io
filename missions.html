@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Missions & Parcours | Corentin Gransart</title>
+    <meta name="description" content="Détail des missions de Corentin Gransart chez ATJ Services : Supervision Atera, Support N2, Déploiement infrastructure et Réseaux.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><span class="logo-text">C.Gransart<span class="highlight">.IT</span></span></a>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="missions.html" class="nav-link active">Mes Missions</a></li>
+                    <li><a href="competences.html" class="nav-link">Stack Technique</a></li>
+                    <li><a href="contact.html" class="nav-link btn-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content reveal-up">
+                    <h1 class="page-title">Au Cœur de <span class="highlight">l'Infrastructure</span></h1>
+                    <p class="page-subtitle">Mon quotidien d'alternant SISR chez ATJ Services : De la supervision proactive à l'intervention terrain.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section timeline-section">
+            <div class="container">
+                <h2 class="section-title text-center mb-large">Journée Type & <span class="highlight">Responsabilités</span></h2>
+                
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+
+                    <div class="timeline-item left reveal-right" onclick="openModal('modal-8h30')">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content cursor-pointer">
+                            <div class="time-badge">08:30</div>
+                            <h3><i class="fa-solid fa-tower-broadcast"></i> Supervision & RMM</h3>
+                            <p>Contrôle de l'état de santé du parc via <strong>Atera</strong>. Analyse des alertes critiques.</p>
+                            <span class="click-hint"><i class="fa-solid fa-eye"></i> Détails techniques</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right reveal-left" onclick="openModal('modal-10h00')">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content cursor-pointer">
+                            <div class="time-badge">10:00</div>
+                            <h3><i class="fa-brands fa-windows"></i> Admin Sys & Support N2</h3>
+                            <p>Gestion Active Directory, Masterisation de postes et résolution d'incidents complexes.</p>
+                            <span class="click-hint"><i class="fa-solid fa-eye"></i> Voir les tâches</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left reveal-right" onclick="openModal('modal-14h00')">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content cursor-pointer">
+                            <div class="time-badge">14:00</div>
+                            <h3><i class="fa-solid fa-network-wired"></i> Interventions sur Site</h3>
+                            <p>Déploiement d'infrastructure, brassage réseau et installation autonome chez le client.</p>
+                            <span class="click-hint"><i class="fa-solid fa-eye"></i> Mes actions terrain</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right reveal-left" onclick="openModal('modal-17h30')">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content cursor-pointer">
+                            <div class="time-badge">17:30</div>
+                            <h3><i class="fa-solid fa-check-double"></i> Reporting & Documentation</h3>
+                            <p>Clôture des tickets, mise à jour de la base de connaissances et procédures.</p>
+                            <span class="click-hint"><i class="fa-solid fa-eye"></i> Processus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-section text-center">
+            <div class="container reveal-up">
+                <h2>Ces missions valident mes compétences E4</h2>
+                <p style="margin-bottom: 20px; color: var(--text-color);">Je mets en œuvre des solutions d'infrastructure, systèmes et réseaux au quotidien.</p>
+                <a href="competences.html" class="btn btn-primary mt-medium">Voir le tableau de compétences</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal-8h30" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal('modal-8h30')">&times;</button>
+            <div class="modal-header">
+                <h2><i class="fa-solid fa-tower-broadcast"></i> Supervision Proactive</h2>
+                <span class="modal-subtitle">Outil principal : Atera RMM</span>
+            </div>
+            <div class="modal-body">
+                <p>La maintenance préventive est clé pour garantir la continuité de service chez nos clients.</p>
+                
+                <h4>Actions techniques :</h4>
+                <ul class="modal-list">
+                    <li><strong>Monitoring :</strong> Vérification du dashboard Atera (CPU, RAM, Disque, Services arrêtés).</li>
+                    <li><strong>Patch Management :</strong> Validation et déploiement des mises à jour Windows Server et Workstation.</li>
+                    <li><strong>Sécurité :</strong> Analyse des alertes antivirus et tentatives d'intrusion.</li>
+                </ul>
+
+                <div class="competences-block">
+                    <h4>Compétences BTS SIO (SISR) :</h4>
+                    <div class="tags">
+                        <span class="tag">Gérer le patrimoine informatique</span>
+                        <span class="tag">Superviser l'infrastructure</span>
+                        <span class="tag">Vérifier la conformité</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-10h00" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal('modal-10h00')">&times;</button>
+            <div class="modal-header">
+                <h2><i class="fa-solid fa-laptop-code"></i> Administration & Support</h2>
+            </div>
+            <div class="modal-body">
+                <p>Traitement des tickets escaladés (N2) et préparation des environnements utilisateurs.</p>
+                
+                <h4>Tâches principales :</h4>
+                <ul class="modal-list">
+                    <li><strong>Masterisation :</strong> Déploiement d'images Windows 10/11 et configuration des drivers.</li>
+                    <li><strong>Active Directory :</strong> Création de comptes, gestion des GPO (Group Policy Objects) et droits d'accès.</li>
+                    <li><strong>Support N2 :</strong> Résolution de pannes complexes (problèmes DNS, erreurs d'impression serveur, VPN).</li>
+                </ul>
+
+                <div class="competences-block">
+                    <h4>Compétences BTS SIO (SISR) :</h4>
+                    <div class="tags">
+                        <span class="tag">Administrer les systèmes</span>
+                        <span class="tag">Gérer les incidents (Ticketing)</span>
+                        <span class="tag">Assister les utilisateurs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-14h00" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal('modal-14h00')">&times;</button>
+            <div class="modal-header">
+                <h2><i class="fa-solid fa-server"></i> Déploiement & Réseaux</h2>
+            </div>
+            <div class="modal-body">
+                <p>Intervention physique chez le client en autonomie ou en binôme pour l'évolution de l'infrastructure.</p>
+                
+                <h4>Sur le terrain :</h4>
+                <ul class="modal-list">
+                    <li><strong>Installation :</strong> Mise en baie de serveurs et switchs, onduleurs.</li>
+                    <li><strong>Réseau :</strong> Brassage des équipements, test de connectivité, configuration de ports VLAN.</li>
+                    <li><strong>Diagnostic physique :</strong> Test des liaisons câblées et remplacement de composants hardware (RAM, SSD).</li>
+                </ul>
+
+                <div class="competences-block">
+                    <h4>Compétences BTS SIO (SISR) :</h4>
+                    <div class="tags">
+                        <span class="tag">Mettre en service des équipements</span>
+                        <span class="tag">Configurer les éléments actifs</span>
+                        <span class="tag">Maintenir la qualité de service</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-17h30" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal('modal-17h30')">&times;</button>
+            <div class="modal-header">
+                <h2><i class="fa-solid fa-book"></i> Documentation & Qualité</h2>
+            </div>
+            <div class="modal-body">
+                <p>Assurer la traçabilité des interventions est indispensable pour le suivi client et l'équipe.</p>
+                
+                <h4>Actions de fin de journée :</h4>
+                <ul class="modal-list">
+                    <li><strong>Ticketing :</strong> Documentation précise de la résolution dans Atera pour la base de connaissances.</li>
+                    <li><strong>Reporting :</strong> Compte-rendu d'intervention auprès du responsable technique.</li>
+                    <li><strong>Veille :</strong> Point rapide sur les nouvelles vulnérabilités (CERT-FR) ou technologies.</li>
+                </ul>
+
+                <div class="competences-block">
+                    <h4>Compétences BTS SIO (SISR) :</h4>
+                    <div class="tags">
+                        <span class="tag">Organiser son développement prof.</span>
+                        <span class="tag">Élaborer des documents techniques</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Corentin Gransart</h3>
+                <p>Technicien Systèmes & Réseaux - ATJ Services</p>
+            </div>
+            <div class="footer-links">
+                <a href="missions.html" class="active">Missions</a>
+                <a href="competences.html">Compétences</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/corentin-gransart-223862233/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:corentin.gransart@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Corentin Gransart.</p></div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
